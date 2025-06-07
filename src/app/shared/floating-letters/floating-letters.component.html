@@ -1,0 +1,13 @@
+<div class="floating-letters">
+    <span
+        *ngFor="let letter of letters"
+        [ngStyle]="{
+        top: letter.top + '%',
+        left: letter.left + '%',
+        animationDuration: letter.duration + 's',
+        animationDelay: letter.delay + 's',
+        fontSize: letter.size + 'rem'
+        }"
+        >{{ letter.char }}</span
+    >
+</div>

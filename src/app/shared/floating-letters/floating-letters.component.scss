@@ -1,0 +1,26 @@
+.floating-letters {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+
+  span {
+    font-family: Macondo;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.251);
+    animation: floatLetter linear infinite;
+    user-select: none;
+  }
+}
+
+@keyframes floatLetter {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0;
+  }
+}

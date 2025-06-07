@@ -1,0 +1,109 @@
+.home {
+    padding: 2rem 3rem;
+
+    .contact {
+        background-image: url('../../../assets/img/bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 90%;
+        max-width: 1000px;
+        padding: 4rem 1.5rem;
+        margin: 5rem auto;
+        text-align: center;
+        border-radius: 16px;
+
+        h1 {
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            font-family: Sora, sans-serif;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: clamp(1rem, 3vw, 1.3rem);
+            color: #6b7280;
+            font-family: Sora, sans-serif;
+        }
+
+        button {
+            background: linear-gradient(45deg, #818cf8, #22d3ee);
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.7rem;
+            padding: 1rem 2.5rem;
+            width: fit-content;
+            margin: 0 auto;
+            cursor: pointer;
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.5s ease;
+
+            svg {
+            flex-shrink: 0;
+            }
+
+            &:hover {
+            transform: translateY(-5px);
+            }
+        }
+
+        .link {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+
+            a {
+            color: #818cf8;
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+            padding: 0.8rem 1.5rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            transition: all 0.5s ease;
+            background: rgba(255, 255, 255, 0.1);
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+
+            svg {
+                width: 24px;
+                height: 24px;
+                fill: currentColor;
+            }
+
+            span {
+                font-family: Sora, sans-serif;
+                font-weight: bold;
+                font-size: 0.95rem;
+            }
+            }
+        }
+        }
+
+        // Optional (for extra control)
+        @media (max-width: 768px) {
+        .contact {
+            padding: 3rem 1rem;
+            gap: 1.2rem;
+        }
+        .contact button {
+            width: max-content;
+            justify-content: center;
+        }
+    }
+
+
+    @media (max-width: 430px) {
+        padding: 2rem 0;
+    }
+}
