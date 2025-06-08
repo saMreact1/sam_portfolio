@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="svg-container">
+    <svg viewBox="0 0 200 200">
+      <!-- Crane body -->
+      <rect x="90" y="100" width="20" height="80" fill="#38bdf8" />
+      <!-- Crane arm -->
+      <rect x="90" y="90" width="80" height="5" fill="#38bdf8" />
+
+      <!-- Rope (animating beam up) -->
+      <line id="rope" x1="160" y1="95" x2="160" y2="130" stroke="#facc15" stroke-width="3" />
+      <!-- Beam -->
+      <rect id="beam" x="145" y="130" width="30" height="10" fill="#facc15" />
+
+      <!-- Gears -->
+      <g class="gear" transform="translate(60, 160)">
+        <circle r="10" fill="#818cf8"/>
+        <circle r="7" fill="#1e293b"/>
+      </g>
+      <g class="gear reverse" transform="translate(140, 160)">
+        <circle r="10" fill="#818cf8"/>
+        <circle r="7" fill="#1e293b"/>
+      </g>
+    </svg>
+  </div>
+
+  <h1>Page Under Construction</h1>
+  <p>We're working hard to finish this page. Stay tuned!</p>
+
+  <div class="controls">
+    <button class="home-btn" (click)="goHome()">Back to Home</button>
+    <button class="sound-btn" (click)="toggleSound()">
+      {{ isSoundPlaying ? '🔊 Mute' : '🔈 Sound' }}
+    </button>
+  </div>
+</div>

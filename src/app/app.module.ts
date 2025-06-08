@@ -14,6 +14,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { FeaturedProjectsComponent } from './components/featured-projects/featured-projects.component';
 import { ToolkitComponent } from './components/toolkit/toolkit.component';
 import { JourneyComponent } from './components/journey/journey.component';
+import { UnderConstructionComponent } from './components/under-construction/under-construction.component';
 
 // Angular MATERIAL
 import { MatIconModule } from  '@angular/material/icon';
@@ -34,7 +35,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     ContactComponent,
     FeaturedProjectsComponent,
     ToolkitComponent,
-    JourneyComponent
+    JourneyComponent,
+    UnderConstructionComponent
   ],
   imports: [
     BrowserModule,
