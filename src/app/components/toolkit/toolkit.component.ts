@@ -35,7 +35,7 @@ export class ToolkitComponent {
       icon: '../../../assets/logos/js.svg',
       name: 'JavaScript',
       exp: '2+ years',
-      level: 80
+      level: 70
     }
   ]
 
