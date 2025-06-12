@@ -7,8 +7,13 @@
     font-family: Sora, sans-serif;
 }
 
+body.dark-theme {
+    background-color: #f1f5f9;
+    color: #0f0f11;
+}
 body {
     background: #0f0f11;
+    color: #f1f5f9;
 }
 
 // .dark-theme {

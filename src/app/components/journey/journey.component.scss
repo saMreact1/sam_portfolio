@@ -27,9 +27,6 @@
 
         .timeline-item {
             position: relative;
-            display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
             padding: 2rem 0;
 
             &.left {
@@ -179,6 +176,7 @@
   .experience-timeline {
     .timeline-item {
       flex-direction: column !important;
+      padding: 1rem 0 !important;
       align-items: center;
 
       .timeline-card {

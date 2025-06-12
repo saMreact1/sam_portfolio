@@ -13,12 +13,12 @@
 
     <div class="nav-content" [class.active]="isNavOpen">
         <div class="nav-links">
-            <a routerLink="/" routerLinkActive="active">Home</a>
+            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
             <a routerLink="/projects" routerLinkActive="active">Projects</a>
             <a routerLink="/contact" routerLinkActive="active">Contact</a>
             <a href="../../../assets/ADELEKE _SAMUEL.pdf" target="_blank" routerLinkActive="active">Resume</a>
         </div>
-        <div class="theme-toggle ng-tns-c2110170868-5 ng-trigger ng-trigger-themeSwitch" matTooltip="Toggle light mode">
+        <div class="theme-toggle" (click)="toggleTheme()" matTooltip="Toggle light mode">
             <mat-icon>light_mode</mat-icon>
         </div>
     </div>

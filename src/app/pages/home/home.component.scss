@@ -16,13 +16,13 @@
         border-radius: 16px;
 
         h1 {
-            font-size: clamp(2rem, 6vw, 3.5rem);
+            font-size: 2rem;
             font-family: Sora, sans-serif;
             font-weight: bold;
         }
 
         p {
-            font-size: clamp(1rem, 3vw, 1.3rem);
+            font-size: 1rem;
             color: #6b7280;
             font-family: Sora, sans-serif;
         }
@@ -93,7 +93,7 @@
         // Optional (for extra control)
         @media (max-width: 768px) {
         .contact {
-            padding: 3rem 1rem;
+            padding: 2rem 1rem;
             gap: 1.2rem;
         }
         .contact button {
@@ -105,5 +105,25 @@
 
     @media (max-width: 430px) {
         padding: 2rem 0;
+
+        .contact {
+            gap: .5rem;
+
+            h1 {
+                font-size: 1.65rem !important;
+            }
+            p {
+                font-size: 0.9rem !important;
+            }
+
+            button {
+                padding: 0.7rem 1.5rem;
+                font-size: 0.8rem;
+            }
+            .link a {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.85rem;
+            }
+        }
     }
 }
