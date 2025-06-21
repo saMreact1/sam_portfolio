@@ -13,10 +13,14 @@
 
     <div class="nav-content" [class.active]="isNavOpen">
         <div class="nav-links">
-            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-            <a routerLink="/projects" routerLinkActive="active">Projects</a>
-            <a routerLink="/contact" routerLinkActive="active">Contact</a>
-            <a href="../../../assets/ADELEKE _SAMUEL.pdf" target="_blank" routerLinkActive="active">Resume</a>
+            <a class="link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+            <a class="link" routerLink="/projects" routerLinkActive="active">Projects</a>
+            <a class="link" routerLink="/contact" routerLinkActive="active">Contact</a>
+            <a class="link" href="../../../assets/ADELEKE _SAMUEL.pdf" target="_blank" routerLinkActive="active">Resume</a>
+            <a href="http://linkedin.com/in/samreact1" target="_blank" class="linkedin">
+                <img src="../../../assets/icons/linkenin.svg" alt="">
+                <span>LinkedIn</span>
+            </a>
         </div>
         <!-- <div class="theme-toggle" (click)="toggleTheme()" matTooltip="Toggle light mode">
             <mat-icon>light_mode</mat-icon>

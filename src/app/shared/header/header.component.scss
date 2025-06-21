@@ -71,7 +71,7 @@
     .nav-links {
         display: flex;
         align-items: center;
-        gap: 2rem;
+        gap: 1rem;
     }
     .nav-links a {
         position: relative;
@@ -83,6 +83,26 @@
         margin: 0 1rem;
         transition: all .3s ease;
     }
+    .nav-links .linkedin {
+        display: flex;
+        align-items: center;
+        gap: .725rem;
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: blue;
+        background: #818df849;
+        padding: 8px 20px;
+        border-radius: 16px;
+        transition: transform .5s ease;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
     .nav-links a.active {
         color: #fff;
         font-weight: 600;
@@ -92,7 +112,7 @@
         transform: scaleX(1);
         transform-origin: left;
     }
-    .nav-links a::after {
+    .nav-links .link::after {
         content: "";
         position: absolute;
         bottom: 0;

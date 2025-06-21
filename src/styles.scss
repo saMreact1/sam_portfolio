@@ -7,6 +7,10 @@
     font-family: Sora, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body.dark-theme {
     background-color: #f1f5f9;
     color: #0f0f11 !important;
