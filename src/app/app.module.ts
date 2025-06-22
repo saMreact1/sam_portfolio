@@ -37,7 +37,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     FeaturedProjectsComponent,
     ToolkitComponent,
     JourneyComponent,
-    UnderConstructionComponent
+    UnderConstructionComponent,
   ],
   imports: [
     BrowserModule,

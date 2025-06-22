@@ -1,6 +1,5 @@
 .footer {
   position: relative;
-  // background: #0f0f11;
   padding: 0;
   overflow: hidden;
 
@@ -10,7 +9,7 @@
     left: 0;
     right: 0;
     height: 100%;
-    background: radial-gradient(circle at top center, #0f0f11 0%, #0f0f11 100%);
+    // background: radial-gradient(circle at top center, #0f0f11 0%, #0f0f11 100%);
     pointer-events: none;
     opacity: .1;
   }

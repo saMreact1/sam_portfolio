@@ -25,6 +25,7 @@
         p {
             max-width: 600px;
             font-size: 1.2rem;
+            text-align: center;
             color: #94a3b8;
             line-height: 1.6;
             margin: 2rem auto;
@@ -42,7 +43,6 @@
             border-radius: 16px;
             box-shadow: 0 1px 5px rgba(0, 0, 0, .3);
             text-decoration: none;
-            color: #f1f5f9;
             overflow: hidden;
             isolation: isolate;
             transition: all .3s cubic-bezier(.4,0,.2,1);
@@ -69,6 +69,7 @@
             }
 
             h3 {
+                color: #818cf8;
                 font-size: 1.25rem;
                 font-weight: 600;
                 margin-bottom: .5rem;
@@ -96,7 +97,6 @@
         border-radius: 24px;
         padding: 3rem;
         box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
-        // font-family: Maconda, Sora, serif;
         position: relative;
         isolation: isolate;
         overflow: hidden;
@@ -131,7 +131,6 @@
                             font-size: 1.25rem;
                             font-family: Macondo, sans-serif;
                             font-weight: 500;
-                            color: #f1f5f9;
                         }
 
                         .input-wrapper {
@@ -369,7 +368,6 @@
         }
 
         p {
-            text-align: center;
             font-size: 1.2rem;
             margin: 1.5rem auto;
         }
