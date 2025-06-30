@@ -23,57 +23,7 @@
             </a>
         </div>
         <div class="theme-toggle" (click)="toggleTheme()" matTooltip="Toggle light mode">
-            <mat-icon>light_mode</mat-icon>
+            <mat-icon [class.spin]="isSpinning">light_mode</mat-icon>
         </div>
-        <!-- <div class="theme-toggle emoji" (click)="toggleTheme()" [matTooltip]="tooltipText">
-            <span [@fadeSlide]="themeIcon" class="emoji-icon">{{ themeIcon }}</span>
-        </div> -->
-        <!-- <div class="theme-toggle-svg" (click)="toggleTheme()" [matTooltip]="tooltipText">
-            <svg viewBox="0 0 100 100" width="40" height="40">
-                <path
-                [attr.d]="currentPath"
-                class="theme-icon-path"
-                fill="currentColor"
-                ></path>
-            </svg>
-        </div> -->
-        
-        <!-- <div class="theme-toggle-svg" (click)="toggleTheme()" matTooltip="{{ tooltipText }}">
-            <svg
-                viewBox="0 0 32 32"
-                width="32"
-                height="32"
-                class="theme-icon"
-                >
-                <defs>
-                    <mask id="moon-mask">
-                    <rect x="0" y="0" width="100%" height="100%" fill="white" />
-                    <circle
-                        [attr.cx]="maskCx"
-                        [attr.cy]="maskCy"
-                        [attr.r]="maskR"
-                        fill="black"
-                    />
-                    </mask>
-                </defs> -->
-
-                <!-- Sun/Moon Core -->
-                <!-- <circle
-                    cx="16"
-                    cy="16"
-                    r="15"
-                    [attr.fill]="isDarkMode ? '#ffffff' : '#ffcc00'"
-                    [attr.mask]="isDarkMode ? 'url(#moon-mask)' : null"
-                /> -->
-
-                <!-- Sun Rays -->
-                <!-- <g [style.opacity]="raysOpacity" stroke="#ffcc00">
-                    <line x1="16" y1="1" x2="16" y2="5" />
-                    <line x1="16" y1="27" x2="16" y2="31" />
-                    <line x1="1" y1="16" x2="5" y2="16" />
-                    <line x1="27" y1="16" x2="31" y2="16" />
-                </g>
-            </svg>
-        </div> -->
     </div>
 </header>

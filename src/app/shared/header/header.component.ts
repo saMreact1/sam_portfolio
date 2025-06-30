@@ -10,6 +10,7 @@ import { ThemeService } from '../../core/services/theme.service';
 export class HeaderComponent implements OnInit {
   isNavOpen: boolean = false;
   isDarkMode: boolean = true;
+  isSpinning: boolean = false;
   tooltipText: string = 'Toggle Dark Mode';
   maskCx = 40;
   maskCy = 0;
@@ -29,7 +30,6 @@ export class HeaderComponent implements OnInit {
     });
 
     this.isDarkMode = this.themeService.getActiveTheme() === 'dark';
-    this.updateIcon();
   }
 
   toggleNav() {
@@ -37,27 +37,14 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleTheme() {
+    this.isSpinning = true;
     this.isDarkMode = !this.isDarkMode;
     this.themeService.setTheme(this.isDarkMode ? 'dark' : 'light');
-    this.updateIcon();
-  }
 
-  private updateIcon() {
-    if(this.isDarkMode) {
-      // Morph into moon
-      this.maskCx = 40;
-      this.maskCy = 0;
-      this.maskR = 15;
-      this.raysOpacity = 0;
-      this.tooltipText = 'Toggle Light Mode';
-    } else {
-      // Morph into sun
-      this.maskCx = 0;
-      this.maskCy = 0;
-      this.maskR = 0;
-      this.raysOpacity = 1;
-      this.tooltipText = 'Toggle Dark Mode';
-    }
+    setTimeout(() => {
+      this.isSpinning = false;
+      this.closeMenu()
+    }, 500);
   }
 
   closeMenu() {
