@@ -41,10 +41,12 @@ $dark-theme: mat.define-dark-theme((
 @include mat.core();
 
 // Apply themes conditionally using body class
+// Use all-component-themes for light (includes colors + density)
+// Use all-component-colors for dark (only colors, avoids duplicate density)
 .light-theme {
   @include mat.all-component-themes($light-theme);
 }
 
 .dark-theme {
-  @include mat.all-component-themes($dark-theme);
+  @include mat.all-component-colors($dark-theme);
 }
